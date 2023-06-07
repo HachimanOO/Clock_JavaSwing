@@ -5,9 +5,9 @@ import java.util.List;
 public class ClockTime implements Runnable{
     List<Observer> observerList = new ArrayList<>();
     LocalTime time;
-    private int hour;
-    private int minute;
-    private int second;
+    int hour;
+    int minute;
+    int second;
     public ClockTime(){
       tick();
       Thread thread = new Thread(this);
